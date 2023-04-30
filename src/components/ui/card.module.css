@@ -1,0 +1,4 @@
+.container {
+    padding: var(--theme-values-padding-main);
+    border-radius: var(--theme-values-border_radius-main);
+}
