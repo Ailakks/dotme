@@ -1,6 +1,9 @@
 :root {
     --theme-values-padding-main: 20px;
     --theme-values-border_radius-main: 15px;
+
+    --theme-values-grid_gap-min: 10px;
+    --theme-values-grid_gap-main: 20px
 }
 
 * {
