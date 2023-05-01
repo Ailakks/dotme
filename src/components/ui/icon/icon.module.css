@@ -1,3 +1,10 @@
-.container {
+.container:hover {
+    transform: scale(.8);
+    transition: all 0.3s cubic-bezier(.14,1,.94,.85);
+}
 
+.container > i {
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
 }

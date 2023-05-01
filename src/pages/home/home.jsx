@@ -26,6 +26,7 @@ export default function Home() {
                 </Card>
                 <Card style={{gridColumnStart: 3, gridColumnEnd: 7, backgroundColor: '#180E33', color: '#61BE8F'}}>
                     <h1>Some of my skills :)</h1>
+                    <img src="https://skillicons.dev/icons?i=java,js,ts,linux,html,css,react,vue,nextjs,webflow,vite,electron,express,graphql,nestjs,sqlite,mysql,mongo,redis,bots,nginx,cloudflare,grafana,git,nodejs,maven,gradle,gcp,azure,heroku,vscode,idea,postman&perline=11" />
                 </Card>
                 <Card style={{gridColumnStart: 1, gridColumnEnd: 4, backgroundColor: '#180E33', color: '#61BE8F'}}>
                     <h1>Content creators I worked for</h1>
