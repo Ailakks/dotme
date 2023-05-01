@@ -2,7 +2,7 @@
     --theme-values-padding-main: 20px;
     --theme-values-border_radius-main: 15px;
 
-    --theme-values-grid_gap-min: 10px;
+    --theme-values-grid_gap-min: 15px;
     --theme-values-grid_gap-main: 20px
 }
 
@@ -10,4 +10,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+h1 {
+    font-size: 60px;
 }
