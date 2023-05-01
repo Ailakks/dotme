@@ -80,8 +80,8 @@ export default function Home() {
                     <h3>I'm a passionate 17-year-old developer who <mark>loves building cool
                         stuff</mark> with <mark>Java</mark> and <mark>JavaScript</mark>. I'm particularly skilled
                         in <mark>designing websites</mark> and creating <mark>robust APIs</mark>using the latest
-                        technologies like <mark>React</mark> and <mark>NestJS</mark>. I also have experience in crafting
-                        <mark>Minecraft plugins</mark>
+                        technologies like <mark>React</mark> and <mark>NestJS</mark>. I also have experience in
+                        crafting <mark>Minecraft plugins</mark>
                         using <mark>PaperMC</mark>, <mark>BungeeCord</mark> & <mark>Velocity</mark> APIs and I enjoy
                         working with databases like <mark>MongoDB</mark>, <mark>Redis</mark>, and
                         occasionally <mark>MySQL</mark>.
@@ -114,7 +114,12 @@ export default function Home() {
                     <Icon icon="fa-brands fa-discord"/>
                     <h3>Discord community, certainly inactive, but well, we are still there.</h3>
                 </Card>
-                <Card link="https://www.google.es/maps/place/Spain" style={{gridColumnStart: 3, gridColumnEnd: 5, backgroundColor: '#AD1519', justifyItems: 'center'}}>
+                <Card link="https://www.google.es/maps/place/Spain" style={{
+                    gridColumnStart: 3,
+                    gridColumnEnd: 5,
+                    backgroundColor: '#AD1519',
+                    justifyItems: 'center'
+                }}>
                     <h3>I'm from...</h3>
                     <h1>Spain</h1>
                 </Card>
