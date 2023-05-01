@@ -17,7 +17,6 @@
 }
 
 #spaced {
-    background: red;
     grid-template-rows: 1fr auto;
 }
 
