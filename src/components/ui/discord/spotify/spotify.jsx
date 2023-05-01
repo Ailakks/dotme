@@ -30,7 +30,7 @@ export default function Spotify(props) {
             )
         } else {
             return (
-                <h2>Listening... nothing :(</h2>
+                <h2>Not listening to anything</h2>
             )
         }
     } else {

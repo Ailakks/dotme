@@ -4,7 +4,7 @@
     overflow-x: auto;
 }
 
-.element > img {
+.element > a > img {
     background: var(--theme-component-grid-image-background);
     height: var(--theme-component-grid-image-size);
     aspect-ratio: 1 / 1;

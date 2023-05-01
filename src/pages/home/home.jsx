@@ -20,6 +20,7 @@ import Projects from "../../assets/list/projects.json";
 import Works from "../../assets/list/works.json";
 import MinecraftSoftware from "../../assets/list/minecraft-software.json";
 import Setup from "../../assets/list/setup.json";
+import Recommend from "../../assets/list/recommend.json";
 
 export default function Home() {
     const [date, setDate] = useState(moment({month: 2, date: 25}));
@@ -118,11 +119,12 @@ export default function Home() {
                     <h3>I'm from...</h3>
                     <h1>Spain</h1>
                 </Card>
-                <Card style={{gridColumnStart: 5, gridColumnEnd: 7}}>
+                <Card style={{gridColumnStart: 5, gridColumnEnd: 7, backgroundColor: '#178f3b'}}>
                     <Spotify user="725039856933404694"/>
                 </Card>
-                <Card style={{gridColumnStart: 1, gridColumnEnd: 5, backgroundColor: '#180E33'}}>
+                <Card style={{gridColumnStart: 1, gridColumnEnd: 5, backgroundColor: '#413177'}}>
                     <h2>Content creators I recommend</h2>
+                    <InlineGrid list={Recommend}/>
                 </Card>
                 <Card
                     style={{gridColumnStart: 5, gridColumnEnd: 7, backgroundColor: '#8422ab', justifyItems: 'center'}}>
