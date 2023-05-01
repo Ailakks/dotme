@@ -114,8 +114,7 @@ export default function Home() {
                     <Icon icon="fa-brands fa-discord"/>
                     <h3>Discord community, certainly inactive, but well, we are still there.</h3>
                 </Card>
-                <Card
-                    style={{gridColumnStart: 3, gridColumnEnd: 5, backgroundColor: '#AD1519', justifyItems: 'center'}}>
+                <Card link="https://www.google.es/maps/place/Spain" style={{gridColumnStart: 3, gridColumnEnd: 5, backgroundColor: '#AD1519', justifyItems: 'center'}}>
                     <h3>I'm from...</h3>
                     <h1>Spain</h1>
                 </Card>
