@@ -2,17 +2,19 @@ import style from "./home.module.css";
 
 import Card from "../../components/ui/card/card";
 import Icon from "../../components/ui/icon/icon";
-import Grid from "../../components/ui/grid/grid";
 
-import ContentCreators from "../../assets/list/content-creators.json";
-import Projects from "../../assets/list/projects.json";
-import Works from "../../assets/list/works.json";
 import Container from "../../components/layout/container/container";
 import SideGrid from "../../components/layout/side-grid/side-grid";
 import Avatar from "../../components/ui/avatar/avatar";
 
 import moment from 'moment';
 import {useEffect, useState} from "react";
+
+import ContentCreators from "../../assets/list/content-creators.json";
+import Projects from "../../assets/list/projects.json";
+import Works from "../../assets/list/works.json";
+import MinecraftSoftware from "../../assets/list/minecrtaft-software.json";
+import InlineGrid from "../../components/ui/inline-grid/inline-grid";
 
 export default function Home() {
     const [date, setDate] = useState(moment({ month: 2, date: 25 }));
@@ -51,11 +53,11 @@ export default function Home() {
                 </Card>
                 <Card style={{gridColumnStart: 1, gridColumnEnd: 4, backgroundColor: '#6A1B9A'}}>
                     <h2>Content creators I worked for</h2>
-                    <Grid list={ContentCreators} />
+                    <InlineGrid list={ContentCreators} />
                 </Card>
                 <Card style={{gridColumnStart: 4, gridColumnEnd: 7, backgroundColor: '#1E88E5'}}>
                     <h2>Projects I've been part of</h2>
-                    <Grid list={Projects} />
+                    <InlineGrid list={Projects} />
                 </Card>
                 <Card style={{gridColumnStart: 1, gridColumnEnd: 3, backgroundColor: '#180E33'}}>
                     <h2>Music I like</h2>
@@ -70,7 +72,7 @@ export default function Home() {
                 </Card>
                 <Card style={{gridColumnStart: 1, gridColumnEnd: 3, backgroundColor: '#1E88E5'}}>
                     <h2>Projects I did</h2>
-                    <Grid list={Works} />
+                    <InlineGrid list={Works} />
                 </Card>
                 <Card style={{gridColumnStart: 3, gridColumnEnd: 5, backgroundColor: '#1E88E5'}}>
                 </Card>
@@ -82,7 +84,7 @@ export default function Home() {
                 <Card style={{gridColumnStart: 4, gridColumnEnd: 7, backgroundColor: '#DD2C00'}}>
                     <h2>Minecraft software I work with</h2>
                 </Card>
-                <Card style={{gridColumnStart: 1, gridColumnEnd: 4, backgroundColor: '#5865F2'}}>
+                <Card link="https://discord.gg/btbnqmtnWz" style={{gridColumnStart: 1, gridColumnEnd: 4, backgroundColor: '#5865F2'}}>
                     <Icon icon="fa-brands fa-discord" />
                     <h3>Discord community, certainly inactive, but well, we are still there.</h3>
                 </Card>
