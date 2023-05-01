@@ -2,6 +2,9 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, 24px);
     overflow-x: auto;
+
+    grid-column: span 2;
+    transition: transform 1s;
 }
 
 .image {
