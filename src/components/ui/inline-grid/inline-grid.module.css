@@ -1,10 +1,12 @@
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, 24px);
-    overflow-x: auto;
+    overflow: auto visible;
+}
 
-    grid-column: span 2;
-    transition: transform 1s;
+.image:hover {
+    transform: scale(1.04);
+    transition: transform .4s;
 }
 
 .image {

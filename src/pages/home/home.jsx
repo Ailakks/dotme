@@ -82,8 +82,8 @@ export default function Home() {
                         stuff</mark> with <mark>Java</mark> and <mark>JavaScript</mark>. I'm particularly skilled
                         in <mark>designing websites</mark> and creating <mark>robust APIs</mark> using the latest
                         technologies like <mark>React</mark> and <mark>NestJS</mark>. I also have experience in
-                        crafting <mark>Minecraft plugins</mark>
-                        using <mark>PaperMC</mark>, <mark>BungeeCord</mark> & <mark>Velocity</mark> APIs and I enjoy
+                        crafting <mark>Minecraft plugins</mark> using <mark>PaperMC</mark>
+                        , <mark>BungeeCord</mark> & <mark>Velocity</mark> APIs and I enjoy
                         working with databases like <mark>MongoDB</mark>, <mark>Redis</mark>, and
                         occasionally <mark>MySQL</mark>.
                     </h3>
@@ -137,7 +137,7 @@ export default function Home() {
                     <h1>GMT+2</h1>
                 </Card>
             </div>
-            <Footer />
+            <Footer/>
         </Container>
     )
 }
