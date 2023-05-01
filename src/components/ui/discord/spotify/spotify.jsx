@@ -18,7 +18,7 @@ export default function Spotify(props) {
     if (data.success) {
         if (spotify) {
             return (
-                <div className={style.container} style={{
+                <a rel="nofollow" target="_blank" href={`https://open.spotify.com/track/${spotify['track_id']}`} className={style.container} style={{
                     backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("${spotify['album_art_url']}")`}}>
                     <p id={style['title']}>Currently listening</p>
                     <div>
@@ -26,7 +26,7 @@ export default function Spotify(props) {
                         <p>{spotify.artist}</p>
                     </div>
                     <p>{moment(spotify['timestamps']?.start).fromNow()}</p>
-                </div>
+                </a>
             )
         } else {
             return (
