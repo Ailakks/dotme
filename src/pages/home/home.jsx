@@ -21,6 +21,7 @@ import Works from "../../assets/list/works.json";
 import MinecraftSoftware from "../../assets/list/minecraft-software.json";
 import Setup from "../../assets/list/setup.json";
 import Recommend from "../../assets/list/recommend.json";
+import Footer from "../../components/ui/footer/footer";
 
 export default function Home() {
     const [date, setDate] = useState(moment({month: 2, date: 25}));
@@ -136,6 +137,7 @@ export default function Home() {
                     <h1>GMT+2</h1>
                 </Card>
             </div>
+            <Footer />
         </Container>
     )
 }

@@ -1,0 +1,21 @@
+.container {
+    margin: 0 auto;
+    width: min-content;
+
+    display: grid;
+    grid-gap: var(--theme-values-grid_gap-main);
+    grid-auto-flow: column;
+    white-space: nowrap;
+
+    padding: var(--theme-values-padding-main) 0;
+
+    color: white;
+}
+
+
+.container > div {
+    display: grid;
+    grid-gap: var(--theme-values-grid_gap-min);
+    align-items: center;
+    grid-auto-flow: column;
+}
