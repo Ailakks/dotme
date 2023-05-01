@@ -1,7 +1,9 @@
 @import url('https://v1.fontapi.ir/css/SFProDisplay');
 
 :root {
+    --theme-values-padding-min: 5px;
     --theme-values-padding-main: 20px;
+
     --theme-values-border_radius-main: 15px;
     --theme-values-border_radius-max: 99px;
 

@@ -13,8 +13,10 @@ import {useEffect, useState} from "react";
 import ContentCreators from "../../assets/list/content-creators.json";
 import Projects from "../../assets/list/projects.json";
 import Works from "../../assets/list/works.json";
-import MinecraftSoftware from "../../assets/list/minecrtaft-software.json";
+import MinecraftSoftware from "../../assets/list/minecraft-software.json";
 import InlineGrid from "../../components/ui/inline-grid/inline-grid";
+import ExpandableList from "../../components/ui/expandable-list/expandable-list";
+import Activity from "../../components/ui/discord/activity/activity";
 
 export default function Home() {
     const [date, setDate] = useState(moment({ month: 2, date: 25 }));
@@ -35,7 +37,7 @@ export default function Home() {
                             JavaScript.</h3>
                     </SideGrid>
                 </Card>
-                <Card style={{gridColumnStart: 5, gridColumnEnd: 7, backgroundColor: '#F44336'}}>
+                <Card style={{gridColumnStart: 5, gridColumnEnd: 7, backgroundColor: '#F44336', textAlign: 'center'}}>
                     <h1>{date.diff(moment(), 'days')} days</h1>
                     <h3>until my birthday — February 25.</h3>
                 </Card>
@@ -74,15 +76,20 @@ export default function Home() {
                     <h2>Projects I did</h2>
                     <InlineGrid list={Works} />
                 </Card>
-                <Card style={{gridColumnStart: 3, gridColumnEnd: 5, backgroundColor: '#1E88E5'}}>
+                <Card link="https://github.com/Ailakks/dotme" style={{gridColumnStart: 3, gridColumnEnd: 5, backgroundColor: '#1E88E5'}}>
+                    <h2>This website is open source</h2>
+                    <h3>You can use it for your own, but remember to keep the "made by Ailakks" label.</h3>
                 </Card>
                 <Card style={{gridColumnStart: 5, gridColumnEnd: 7, backgroundColor: '#1E88E5'}}>
+                    <h2>Activity</h2>
+                    <Activity user="725039856933404694" />
                 </Card>
                 <Card style={{gridColumnStart: 1, gridColumnEnd: 4, backgroundColor: '#FFC107'}}>
                     <h2>Games I love</h2>
                 </Card>
                 <Card style={{gridColumnStart: 4, gridColumnEnd: 7, backgroundColor: '#DD2C00'}}>
                     <h2>Minecraft software I work with</h2>
+                    <ExpandableList list={MinecraftSoftware} />
                 </Card>
                 <Card link="https://discord.gg/btbnqmtnWz" style={{gridColumnStart: 1, gridColumnEnd: 4, backgroundColor: '#5865F2'}}>
                     <Icon icon="fa-brands fa-discord" />

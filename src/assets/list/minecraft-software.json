@@ -1,14 +1,14 @@
 [
   {
     "displayName": "PaperMC",
-    "image": "paper.jpg"
+    "image": "paper.png"
   },
   {
     "displayName": "BungeeCord",
-    "image": "bungeecord.jpg"
+    "image": "bungeecord.png"
   },
   {
     "displayName": "Velocity",
-    "image": "velocity.jpg"
+    "image": "velocity.png"
   }
 ]
