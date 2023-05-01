@@ -19,10 +19,14 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "git-info": "node src/scripts/git-info-gen.js",
+    "start": "export REACT_APP_VERSION=$(git rev-parse HEAD) && react-scripts start",
+    "build": "npm run git-info && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "npm run git-info && react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
