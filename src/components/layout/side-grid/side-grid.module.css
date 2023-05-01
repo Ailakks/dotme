@@ -1,0 +1,11 @@
+.container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: var(--theme-values-grid_gap-big);
+    align-items: center;
+}
+
+.content {
+    display: grid;
+    grid-gap: var(--theme-values-grid_gap-min);
+}

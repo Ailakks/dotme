@@ -1,6 +1,5 @@
 import style from "./home.module.css";
 
-import Container from "../../components/layout/container";
 import Card from "../../components/ui/card/card";
 import Icon from "../../components/ui/icon/icon";
 import Grid from "../../components/ui/grid/grid";
@@ -8,15 +7,20 @@ import Grid from "../../components/ui/grid/grid";
 import ContentCreators from "../../assets/list/content-creators.json";
 import Projects from "../../assets/list/projects.json";
 import Works from "../../assets/list/works.json";
+import Container from "../../components/layout/container/container";
+import SideGrid from "../../components/layout/side-grid/side-grid";
+import Avatar from "../../components/ui/avatar/avatar";
 
 export default function Home() {
     return (
         <Container>
             <div className={style.grid}>
                 <Card style={{gridColumnStart: 1, gridColumnEnd: 5, backgroundColor: '#4527A0'}}>
-                    <h2>Hey, my name is Ailakks! :D</h2>
-                    <h3>I'm a passionate 17-year-old developer who loves building cool stuff with Java and
-                        JavaScript.</h3>
+                    <SideGrid element={<Avatar style={{height: 120}} image={require('../../assets/images/avatar.png')} />}>
+                        <h2>Hey, my name is Ailakks! :D</h2>
+                        <h3>I'm a passionate 17-year-old developer who loves building cool stuff with Java and
+                            JavaScript.</h3>
+                    </SideGrid>
                 </Card>
                 <Card style={{gridColumnStart: 5, gridColumnEnd: 7, backgroundColor: '#F44336'}}>
                     <h1>120 days</h1>
@@ -53,11 +57,19 @@ export default function Home() {
                         PaperMC, BungeeCord & Velocity APIs and I enjoy working with databases like MongoDB, Redis, and
                         occasionally MySQL.</h3>
                 </Card>
-                <Card style={{gridColumnStart: 1, gridColumnEnd: 5, backgroundColor: '#FFC107'}}>
-                    <h3>Games I love</h3>
+                <Card style={{gridColumnStart: 1, gridColumnEnd: 3, backgroundColor: '#1E88E5'}}>
+                    <h2>Projects I did</h2>
+                    <Grid list={Works} />
                 </Card>
-                <Card style={{gridColumnStart: 5, gridColumnEnd: 7, backgroundColor: '#DD2C00'}}>
-                    <h3>Minecraft software I work with</h3>
+                <Card style={{gridColumnStart: 3, gridColumnEnd: 5, backgroundColor: '#1E88E5'}}>
+                </Card>
+                <Card style={{gridColumnStart: 5, gridColumnEnd: 7, backgroundColor: '#1E88E5'}}>
+                </Card>
+                <Card style={{gridColumnStart: 1, gridColumnEnd: 4, backgroundColor: '#FFC107'}}>
+                    <h2>Games I love</h2>
+                </Card>
+                <Card style={{gridColumnStart: 4, gridColumnEnd: 7, backgroundColor: '#DD2C00'}}>
+                    <h2>Minecraft software I work with</h2>
                 </Card>
                 <Card style={{gridColumnStart: 1, gridColumnEnd: 4, backgroundColor: '#5865F2'}}>
                     <Icon icon="fa-brands fa-discord" />
@@ -68,7 +80,7 @@ export default function Home() {
                     <h1>Spain</h1>
                 </Card>
                 <Card style={{gridColumnStart: 1, gridColumnEnd: 5, backgroundColor: '#180E33'}}>
-                    <h3>My setup</h3>
+                    <h2>My setup</h2>
                 </Card>
                 <Card style={{gridColumnStart: 5, gridColumnEnd: 7, backgroundColor: '#180E33', justifyItems: 'center'}}>
                     <h3>Timezone</h3>
