@@ -118,7 +118,7 @@ export default function Home() {
                     <h3>I'm from...</h3>
                     <h1>Spain</h1>
                 </Card>
-                <Card style={{gridColumnStart: 5, gridColumnEnd: 7, backgroundColor: '#178f3b'}}>
+                <Card style={{gridColumnStart: 5, gridColumnEnd: 7, backgroundColor: 'none'}}>
                     <Spotify user="725039856933404694"/>
                 </Card>
                 <Card style={{gridColumnStart: 1, gridColumnEnd: 5, backgroundColor: '#413177'}}>

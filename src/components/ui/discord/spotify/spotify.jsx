@@ -30,12 +30,16 @@ export default function Spotify(props) {
             )
         } else {
             return (
-                <h2>Not listening to anything</h2>
+                <div className={style.container} style={{backgroundColor: '#178f3b'}}>
+                    <h2>Not listening to anything</h2>
+                </div>
             )
         }
     } else {
         return (
-            <h2>Not available...</h2>
+            <div className={style.container} style={{backgroundColor: '#178f3b'}}>
+                <h2>Not available...</h2>
+            </div>
         )
     }
 }
