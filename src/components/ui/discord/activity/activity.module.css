@@ -1,3 +1,12 @@
 .container {
+    display: grid;
+    grid-gap: var(--theme-values-grid_gap-min);
 
+    max-height: var(--theme-component-box-max_height);
+    overflow-y: auto;
+}
+
+.element {
+    display: grid;
+    grid-gap: var(--theme-values-grid_gap-min);
 }

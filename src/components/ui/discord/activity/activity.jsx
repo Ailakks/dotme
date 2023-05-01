@@ -2,6 +2,7 @@ import style from "./activity.module.css";
 import {useEffect, useState} from "react";
 import axios from 'axios';
 import moment from "moment";
+import Element from "../../element/element";
 
 export default function Activity(props) {
     const [data, setData] = useState({});
@@ -21,14 +22,16 @@ export default function Activity(props) {
     if (data.success) {
         if (activity.length > 0) {
             return (
-                <div>
+                <div className={style.container}>
                     {
                         activity.map((value, key) =>
-                            <div key={key} className={style.container}>
-                                <p>{value.name}</p>
-                                <p>{value.details}</p>
+                            <Element className={style.element} key={key}>
+                                <div>
+                                    <p>{value.name}</p>
+                                    <p>{value.details}</p>
+                                </div>
                                 <p>{moment(value['timestamps']?.start).fromNow()}</p>
-                            </div>
+                            </Element>
                         )
                     }
                 </div>

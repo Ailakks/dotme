@@ -4,15 +4,10 @@
 }
 
 .element {
-
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
     gap: var(--theme-values-grid_gap-main);
-
-    background: rgba(255, 255, 255, 0.2);
-    padding: var(--theme-values-padding-min);
-    border-radius: var(--theme-values-border_radius-main);
 }
 
 .element > img {

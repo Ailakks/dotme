@@ -1,0 +1,5 @@
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: var(--theme-values-padding-min);
+    border-radius: var(--theme-values-border_radius-main);
+}
