@@ -11,7 +11,18 @@ import Container from "../../components/layout/container/container";
 import SideGrid from "../../components/layout/side-grid/side-grid";
 import Avatar from "../../components/ui/avatar/avatar";
 
+import moment from 'moment';
+import {useEffect, useState} from "react";
+
 export default function Home() {
+    const [date, setDate] = useState(moment({ month: 2, date: 25 }));
+
+    useEffect(() => {
+        if (date.isBefore(moment())) {
+            setDate(date.clone().add(1, 'year'));
+        }
+    }, []);
+
     return (
         <Container>
             <div className={style.grid}>
@@ -23,7 +34,7 @@ export default function Home() {
                     </SideGrid>
                 </Card>
                 <Card style={{gridColumnStart: 5, gridColumnEnd: 7, backgroundColor: '#F44336'}}>
-                    <h1>120 days</h1>
+                    <h1>{date.diff(moment(), 'days')} days</h1>
                     <h3>until my birthday — February 25.</h3>
                 </Card>
                 <Card link="https://twitter.com/Ailakks" style={{gridColumnStart: 1, gridColumnEnd: 2, backgroundColor: '#1DA1F2'}} id="spaced">
