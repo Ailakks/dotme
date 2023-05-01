@@ -1,4 +1,5 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-gap: var(--theme-values-grid_gap-main);
 }
