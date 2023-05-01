@@ -1,5 +1,6 @@
 .container {
     display: grid;
+    grid-template-rows: 1fr auto;
     grid-gap: var(--theme-values-grid_gap-min);
 
     padding: var(--theme-values-padding-main);
