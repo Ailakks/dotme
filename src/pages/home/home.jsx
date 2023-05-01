@@ -24,13 +24,13 @@ export default function Home() {
                 </Card>
                 <Card style={{gridColumnStart: 5, gridColumnEnd: 7, backgroundColor: '#F44336'}}>
                     <h1>120 days</h1>
-                    <h2>until my birthday, which is February 25.</h2>
+                    <h3>until my birthday — February 25.</h3>
                 </Card>
-                <Card link="https://twitter.com/Ailakks" style={{gridColumnStart: 1, gridColumnEnd: 2, backgroundColor: '#1DA1F2'}}>
+                <Card link="https://twitter.com/Ailakks" style={{gridColumnStart: 1, gridColumnEnd: 2, backgroundColor: '#1DA1F2'}} id="spaced">
                     <Icon icon="fa-brands fa-twitter" />
                     <h3>I tweet about my projects, nonsense, some politics, and sometimes memes :)</h3>
                 </Card>
-                <Card link="https://github.com/Ailakks" style={{gridColumnStart: 2, gridColumnEnd: 3, backgroundColor: '#171515'}}>
+                <Card link="https://github.com/Ailakks" style={{gridColumnStart: 2, gridColumnEnd: 3, backgroundColor: '#171515'}}  id="spaced">
                     <Icon icon="fa-brands fa-github" />
                     <h3>I code a lot. Looking into more open-source projects.</h3>
                 </Card>

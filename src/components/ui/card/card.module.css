@@ -1,8 +1,13 @@
 .container {
     display: grid;
-    grid-template-rows: 1fr auto;
     grid-gap: var(--theme-values-grid_gap-min);
+    align-content: center;
 
     padding: var(--theme-values-padding-main);
     border-radius: var(--theme-values-border_radius-main);
+}
+
+#spaced {
+    background: red;
+    grid-template-rows: 1fr auto;
 }
