@@ -5,21 +5,32 @@ import moment from "moment";
 
 export default function Activity(props) {
     const [data, setData] = useState({});
-    const [activity, setActivity] = useState({});
+    const [activity, setActivity] = useState([]);
 
     useEffect(() => {
         axios.get(`https://api.lanyard.rest/v1/users/${props.user}`).then(response => {
             setData(response.data);
+
+            const activity = response.data.data['activities'];
+
+            activity.shift();
+            setActivity(activity);
         });
     }, []);
 
     if (data.success) {
-        if (data.data['activities'].length > 0) {
+        if (activity.length > 0) {
             return (
-                <div className={style.container}>
-                    <p>{data.data['activities'][1].name}</p>
-                    <p>{data.data['activities'][1].details}</p>
-                    <p>{moment(data.data['activities'][1]['timestamps'].start).fromNow()}</p>
+                <div>
+                    {
+                        activity.map((value, key) =>
+                            <div key={key} className={style.container}>
+                                <p>{value.name}</p>
+                                <p>{value.details}</p>
+                                <p>{moment(value['timestamps']?.start).fromNow()}</p>
+                            </div>
+                        )
+                    }
                 </div>
             )
         } else {
