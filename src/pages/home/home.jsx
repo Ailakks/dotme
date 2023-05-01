@@ -80,7 +80,7 @@ export default function Home() {
                     <h2>More about me!</h2>
                     <h3>I'm a passionate 17-year-old developer who <mark>loves building cool
                         stuff</mark> with <mark>Java</mark> and <mark>JavaScript</mark>. I'm particularly skilled
-                        in <mark>designing websites</mark> and creating <mark>robust APIs</mark>using the latest
+                        in <mark>designing websites</mark> and creating <mark>robust APIs</mark> using the latest
                         technologies like <mark>React</mark> and <mark>NestJS</mark>. I also have experience in
                         crafting <mark>Minecraft plugins</mark>
                         using <mark>PaperMC</mark>, <mark>BungeeCord</mark> & <mark>Velocity</mark> APIs and I enjoy
@@ -96,7 +96,7 @@ export default function Home() {
                       style={{gridColumnStart: 3, gridColumnEnd: 5, backgroundColor: '#2abf84'}}>
                     <Icon icon="fa-regular fa-code"/>
                     <h2>This website is open source</h2>
-                    <h3>You can use it for your own, but remember to keep the "made by Ailakks" label.</h3>
+                    <h3>You can use it for your own, but remember to keep the "made by Ailakks" label, please :)</h3>
                 </Card>
                 <Card style={{gridColumnStart: 5, gridColumnEnd: 7, backgroundColor: '#ab228d'}}>
                     <h2>Activity</h2>
