@@ -7,7 +7,7 @@ export default function InlineGrid(props) {
                 props.list.map((value, key) =>
                     <div key={key} className={style.element}>
                         <a href={value.source ? value.source : value['github']}>
-                            <img alt={value.name} src={require('../../../assets/images/' + value.image)} />
+                            <img className={style.image} alt={value.name} src={require('../../../assets/images/' + value.image)} />
                         </a>
                     </div>
                 )

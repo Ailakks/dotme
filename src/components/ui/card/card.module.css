@@ -21,3 +21,11 @@
     background: red;
     grid-template-rows: 1fr auto;
 }
+
+@media (max-width: 800px) {
+    .container {
+        min-height: var(--theme-component-box-max_height);
+        grid-column-start: 1 !important;
+        grid-column-end: 7 !important;
+    }
+}
