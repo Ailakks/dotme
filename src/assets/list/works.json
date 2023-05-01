@@ -2,31 +2,31 @@
   {
     "name": "Widdlo",
     "image": "widdlo.png",
-    "description": "Plataforma de vídeos y directos open source",
+    "description": "Open-source platform for videos and live streaming",
     "github": "https://github.com/widdlo-dev"
   },
   {
     "name": "Aguacate",
     "image": "aguacate.png",
-    "description": "Core general con todo lo que necesita una network de Minecraft",
+    "description": "General core with everything a Minecraft network needs",
     "github": "https://github.com/Aguacate-Development"
   },
   {
     "name": "Hylaxe Studios",
     "image": "hylaxe-studios.png",
-    "description": "Equipo de creación de eventos de Minecraft y desarrollo web",
+    "description": "Team specializing in Minecraft events and web development",
     "github": "https://github.com/hylaxe-studios"
   },
   {
     "name": "Waterlands",
     "image": "waterlands.png",
-    "description": "Versión de legado de Aguacate",
+    "description": "Legacy version of Aguacate",
     "github": "https://github.com/Waterlands"
   },
   {
     "name": "Wodmy",
     "image": "wodmy.png",
-    "description": "Agencia de programación",
+    "description": "Programming agency",
     "github": "https://github.com/wodmy-development",
     "display_link": "wodmy.com",
     "link": "https://wodmy.com"
@@ -34,19 +34,25 @@
   {
     "name": "Lookup",
     "image": "lookup.png",
-    "description": "Buscador y red social inteligente",
+    "description": "Intelligent search engine and social network",
     "github": "https://github.com/lookup-app"
   },
   {
     "name": "Wibblo",
     "image": "wibblo.png",
-    "description": "Proveedor de servicios en la nube",
+    "description": "Cloud services provider",
     "github": "https://github.com/wibblo"
   },
   {
     "name": "Writty",
     "image": "writty.png",
-    "description": "Plataforma de blogs open source",
+    "description": "Open-source blog platform",
     "github": "https://github.com/writty-dev"
+  },
+  {
+    "name": "Stare App",
+    "image": "stare.png",
+    "description": "Decentralized social network",
+    "github": "https://github.com/stareapp"
   }
 ]
