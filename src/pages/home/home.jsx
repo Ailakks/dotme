@@ -3,6 +3,9 @@ import style from "./home.module.css";
 import Container from "../../components/layout/container";
 import Card from "../../components/ui/card/card";
 import Icon from "../../components/ui/icon/icon";
+import Grid from "../../components/ui/grid/grid";
+
+import Works from "../../assets/list/works.json";
 
 export default function Home() {
     return (
@@ -31,6 +34,7 @@ export default function Home() {
                 </Card>
                 <Card style={{gridColumnStart: 1, gridColumnEnd: 4, backgroundColor: '#6A1B9A'}}>
                     <h2>Content creators I worked for</h2>
+                    <Grid list={Works} />
                 </Card>
                 <Card style={{gridColumnStart: 4, gridColumnEnd: 7, backgroundColor: '#1E88E5'}}>
                     <h2>Projects I've been part of</h2>
