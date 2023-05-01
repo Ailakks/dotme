@@ -1,15 +1,18 @@
 .container {
     display: grid;
     gap: var(--theme-values-grid_gap-min);
+
+    max-height: var(--theme-component-box-max_height);
+    overflow-y: auto;
 }
 
-.element {
+.grid {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
     gap: var(--theme-values-grid_gap-main);
 }
 
-.element > img {
+.grid > img {
     height: 40px;
 }

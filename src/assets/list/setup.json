@@ -1,0 +1,80 @@
+[
+  {
+    "header": "Main monitor",
+    "displayName": "AOC 24G2AE 144Hz",
+    "description": "AOC Gaming Monitor 24G2AE- 24 Full HD, 144Hz, 1ms, IPS, FreeSync Premium, (1920x1080, 250 cd/m, D-SUB, HDMIx2, Displayport 1x1.2)",
+    "opinion": 5
+  },
+  {
+    "header": "Secondary monitor",
+    "displayName": "Lenovo D24-20 75Hz",
+    "description": "Lenovo D24-20 - Gaming Monitor 23.8 FullHD (VA, 75 Hz, 4 ms, HDMI, VGA, FreeSync), tilt adjustment - black",
+    "opinion": 4
+  },
+  {
+    "header": "Keyboard",
+    "displayName": "Corsair K55 RGB PRO XT",
+    "description": "Corsair K55 RGB PRO XT Gaming Keyboard with Membrane Keys, Dynamic RGB Backlighting, 6 Macro Keys with Elgato Software Integration, Dust and Spill Resistance, QWERTY, Black",
+    "opinion": 5
+  },
+  {
+    "header": "Mouse",
+    "displayName": "Logitech G203",
+    "description": "Logitech G203 LIGHTSYNC Gaming Mouse with Customizable RGB Lighting, 6 Programmable Buttons, 8K Sensor for Gaming, Tracking up to 8,000 DPI, Ultra-lightweight - Black",
+    "opinion": 4
+  },
+  {
+    "header": "Capture card",
+    "displayName": "Elgato HD60 S",
+    "description": "Elgato HD60 S, external capture card, streaming and recording at 1080p60 with ultra-low latency on PS5, PS4/Pro, Xbox Series X/S, Xbox One X/S, in OBS, Twitch, YouTube, works with PC and Mac",
+    "opinion": 3
+  },
+  {
+    "header": "Headset",
+    "displayName": "HyperX Cloud Flight",
+    "description": "HyperX HX-HSCF-BK Cloud Flight - Wireless Gaming Headset compatible with PC, PS4/Pro, Black",
+    "opinion": 1
+  },
+  {
+    "header": "Processor",
+    "displayName": "AMD Ryzen 5 5600G",
+    "description": "AMD Ryzen 5 5600G, with Wraith Stealth Cooler",
+    "opinion": 5
+  },
+  {
+    "header": "Graphics card",
+    "displayName": "GEFORCE GTX 1650",
+    "description": "MSI GEFORCE GTX 1650 4GT LP OC",
+    "opinion": 5
+  },
+  {
+    "header": "RAM memory",
+    "displayName": "Corsair Vengeance LPX 2x16 3200MHz",
+    "description": "Corsair CMK16GX4M2B3200C16 Vengeance LPX 16 GB (2 x 8 GB) DDR4 3200 MHz C16 XMP 2.0 High Performance Memory Module, Black",
+    "opinion": 5
+  },
+  {
+    "header": "RAM memory",
+    "displayName": "Kingston FURY Beast 8GB 3600MHz",
+    "description": "Kingston FURY Beast 8GB 3600MHz DDR4 CL17 Memory for Desktop Computers Single Module KF436C17BB/8",
+    "opinion": 5
+  },
+  {
+    "header": "NVMe Solid State Drive",
+    "displayName": "Crucial P5 500GB 6600MB/s",
+    "description": "Crucial P5 Plus CT500P5PSSD8 Disco Duro Sólido Interno SSD de 500GB (PCIe 4.0, 3D NAND, NVMe, M.2) hasta 6600MB/s, Color Negro",
+    "opinion": 5
+  },
+  {
+    "header": "SSD Solid State Drive",
+    "displayName": "Kingston A400 480GB",
+    "description": "Kingston A400 SSD Disco duro sólido interno 2.5\" SATA Rev 3.0, 480GB - SA400S37/240G",
+    "opinion": 5
+  },
+  {
+    "header": "HDD Solid State Drive",
+    "displayName": "Seagate BarraCuda 1TB",
+    "description": "Seagate Technology BarraCuda, 1 TB, Disco duro interno, HDD, 3,5\", SATA 6 GB/s, 7200 RPM, caché de 64 MB para ordenador de sobremesa y PC, Plateado, Paquete Abre-fácil (ST2000DMZ08)",
+    "opinion": 5
+  }
+]

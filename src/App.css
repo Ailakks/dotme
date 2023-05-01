@@ -26,7 +26,7 @@
 html {
     font-family: 'SF Pro Display', sans-serif;
 
-    background: #171717;
+    background: #181818;
 }
 
 h1 {
@@ -39,5 +39,11 @@ h3 {
 
 a {
     text-decoration: none;
+    color: inherit;
+}
+
+mark {
+    /*font-weight: 500;*/
+    background: none;
     color: inherit;
 }
