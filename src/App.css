@@ -1,9 +1,13 @@
 :root {
     --theme-values-padding-main: 20px;
     --theme-values-border_radius-main: 15px;
+    --theme-values-border_radius-max: 99px;
 
-    --theme-values-grid_gap-min: 15px;
-    --theme-values-grid_gap-main: 20px
+    --theme-values-grid_gap-min: 8px;
+    --theme-values-grid_gap-main: 20px;
+
+    --theme-component-grid-image-background: white;
+    --theme-component-grid-image-size: 60px;
 }
 
 * {

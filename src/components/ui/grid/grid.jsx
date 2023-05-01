@@ -5,8 +5,8 @@ export default function Grid(props) {
         <div className={style.container}>
             {
                 props.list.map((value, key) =>
-                    <div key={key}>
-                        <img src={value.image} />
+                    <div key={key} className={style.element}>
+                        <img src={require('../../../assets/images/' + value.image)} />
                     </div>
                 )
             }

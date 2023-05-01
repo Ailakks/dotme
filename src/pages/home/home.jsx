@@ -5,6 +5,8 @@ import Card from "../../components/ui/card/card";
 import Icon from "../../components/ui/icon/icon";
 import Grid from "../../components/ui/grid/grid";
 
+import ContentCreators from "../../assets/list/content-creators.json";
+import Projects from "../../assets/list/projects.json";
 import Works from "../../assets/list/works.json";
 
 export default function Home() {
@@ -34,10 +36,11 @@ export default function Home() {
                 </Card>
                 <Card style={{gridColumnStart: 1, gridColumnEnd: 4, backgroundColor: '#6A1B9A'}}>
                     <h2>Content creators I worked for</h2>
-                    <Grid list={Works} />
+                    <Grid list={ContentCreators} />
                 </Card>
                 <Card style={{gridColumnStart: 4, gridColumnEnd: 7, backgroundColor: '#1E88E5'}}>
                     <h2>Projects I've been part of</h2>
+                    <Grid list={Projects} />
                 </Card>
                 <Card style={{gridColumnStart: 1, gridColumnEnd: 3, backgroundColor: '#180E33'}}>
                     <h2>Music I like</h2>
