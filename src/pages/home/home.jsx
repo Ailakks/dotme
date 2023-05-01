@@ -1,7 +1,8 @@
 import style from "./home.module.css";
 
-import Card from "../../components/ui/card";
 import Container from "../../components/layout/container";
+import Card from "../../components/ui/card/card";
+import Icon from "../../components/ui/icon/icon";
 
 export default function Home() {
     return (
@@ -17,6 +18,7 @@ export default function Home() {
                     <h3>February 25</h3>
                 </Card>
                 <Card style={{gridColumnStart: 1, gridColumnEnd: 2, backgroundColor: '#180E33', color: '#61BE8F'}}>
+                    <Icon icon="fa-brands fa-twitter" />
                     <h3>I tweet about my projects, nonsense, some politics, and sometimes memes :)</h3>
                 </Card>
                 <Card style={{gridColumnStart: 2, gridColumnEnd: 3, backgroundColor: '#180E33', color: '#61BE8F'}}>
