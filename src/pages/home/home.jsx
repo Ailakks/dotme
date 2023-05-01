@@ -62,8 +62,10 @@ export default function Home() {
                     <h2>Projects I've been part of</h2>
                     <InlineGrid list={Projects} />
                 </Card>
-                <Card style={{gridColumnStart: 1, gridColumnEnd: 3, backgroundColor: '#180E33'}}>
+                <Card link="https://open.spotify.com/playlist/3LpykziPdqQltgWnwbAfq4?si=7e891b3008ba45cc" style={{gridColumnStart: 1, gridColumnEnd: 3, backgroundColor: '#1DB954'}}>
+                    <Icon icon="fa-brands fa-spotify" />
                     <h2>Music I like</h2>
+                    <p>Checkout my playlist.</p>
                 </Card>
                 <Card style={{gridColumnStart: 3, gridColumnEnd: 7, backgroundColor: '#004D40'}}>
                     <h2>More about me!</h2>
@@ -78,6 +80,7 @@ export default function Home() {
                     <InlineGrid list={Works} />
                 </Card>
                 <Card link="https://github.com/Ailakks/dotme" style={{gridColumnStart: 3, gridColumnEnd: 5, backgroundColor: '#1E88E5'}}>
+                    <Icon icon="fa-regular fa-code" />
                     <h2>This website is open source</h2>
                     <h3>You can use it for your own, but remember to keep the "made by Ailakks" label.</h3>
                 </Card>
@@ -96,11 +99,11 @@ export default function Home() {
                     <Icon icon="fa-brands fa-discord" />
                     <h3>Discord community, certainly inactive, but well, we are still there.</h3>
                 </Card>
-                <Card style={{gridColumnStart: 3, gridColumnEnd: 5, backgroundColor: '#180E33', justifyItems: 'center'}}>
+                <Card style={{gridColumnStart: 3, gridColumnEnd: 5, backgroundColor: '#AD1519', justifyItems: 'center'}}>
                     <h3>I'm from...</h3>
                     <h1>Spain</h1>
                 </Card>
-                <Card style={{gridColumnStart: 5, gridColumnEnd: 7, backgroundColor: '#180E33', justifyItems: 'center'}}>
+                <Card style={{gridColumnStart: 5, gridColumnEnd: 7}}>
                     <Spotify user="725039856933404694" />
                 </Card>
                 <Card style={{gridColumnStart: 1, gridColumnEnd: 5, backgroundColor: '#180E33'}}>

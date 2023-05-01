@@ -18,7 +18,8 @@ export default function Spotify(props) {
     if (data.success) {
         if (spotify) {
             return (
-                <div className={style.container} style={{backgroundImage: `url(${spotify['album_art_url']})`}}>
+                <div className={style.container} style={{
+                    backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("${spotify['album_art_url']}")`}}>
                     <p id={style['title']}>Currently listening</p>
                     <div>
                         <p>{spotify['song']}</p>

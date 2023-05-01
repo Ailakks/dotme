@@ -5,11 +5,16 @@
     left: 0;
     right: 0;
 
+    background-size: cover;
     padding: var(--theme-values-padding-main);
 
     display: grid;
     grid-template-rows: 1fr auto;
     grid-gap: var(--theme-values-grid_gap-min);
+}
+
+.container > * {
+    opacity: 1;
 }
 
 .container > #title {
