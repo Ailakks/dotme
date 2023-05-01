@@ -17,6 +17,7 @@ import MinecraftSoftware from "../../assets/list/minecraft-software.json";
 import InlineGrid from "../../components/ui/inline-grid/inline-grid";
 import ExpandableList from "../../components/ui/expandable-list/expandable-list";
 import Activity from "../../components/ui/discord/activity/activity";
+import Spotify from "../../components/ui/discord/spotify/spotify";
 
 export default function Home() {
     const [date, setDate] = useState(moment({ month: 2, date: 25 }));
@@ -91,13 +92,16 @@ export default function Home() {
                     <h2>Minecraft software I work with</h2>
                     <ExpandableList list={MinecraftSoftware} />
                 </Card>
-                <Card link="https://discord.gg/btbnqmtnWz" style={{gridColumnStart: 1, gridColumnEnd: 4, backgroundColor: '#5865F2'}}>
+                <Card link="https://discord.gg/btbnqmtnWz" style={{gridColumnStart: 1, gridColumnEnd: 3, backgroundColor: '#5865F2'}}>
                     <Icon icon="fa-brands fa-discord" />
                     <h3>Discord community, certainly inactive, but well, we are still there.</h3>
                 </Card>
-                <Card style={{gridColumnStart: 4, gridColumnEnd: 7, backgroundColor: '#180E33', justifyItems: 'center'}}>
+                <Card style={{gridColumnStart: 3, gridColumnEnd: 5, backgroundColor: '#180E33', justifyItems: 'center'}}>
                     <h3>I'm from...</h3>
                     <h1>Spain</h1>
+                </Card>
+                <Card style={{gridColumnStart: 5, gridColumnEnd: 7, backgroundColor: '#180E33', justifyItems: 'center'}}>
+                    <Spotify user="725039856933404694" />
                 </Card>
                 <Card style={{gridColumnStart: 1, gridColumnEnd: 5, backgroundColor: '#180E33'}}>
                     <h2>My setup</h2>

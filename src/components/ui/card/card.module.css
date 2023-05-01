@@ -1,10 +1,14 @@
 .container {
+    position: relative;
+
     display: grid;
     grid-gap: var(--theme-values-grid_gap-min);
     align-content: center;
 
     padding: var(--theme-values-padding-main);
     border-radius: var(--theme-values-border_radius-main);
+
+    overflow: hidden;
 }
 
 #spaced {
