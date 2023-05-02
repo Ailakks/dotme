@@ -11,7 +11,7 @@ export default function Footer() {
             </div>
             <div>
                 <i className="fa-brands fa-git-alt" />
-                <a href="https://github.com/Ailakks/dotme">dotme@{generatedGitInfo.gitBranch} — {generatedGitInfo.gitCommitHash}</a>
+                <a href="https://github.com/Ailakks/dotme">{generatedGitInfo.gitBranch}@{generatedGitInfo.gitCommitHash}</a>
             </div>
         </div>
     )
