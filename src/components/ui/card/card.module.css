@@ -31,6 +31,6 @@
     min-height: var(--theme-component-box-main_height);
 }
 
-#scrollable {
-    overflow-x: auto;
+.container > img {
+    width: 100%;
 }

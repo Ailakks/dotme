@@ -57,10 +57,9 @@ export default function Home() {
                     <Icon icon="fa-brands fa-github"/>
                     <h3>I code a lot. Looking into more open-source projects.</h3>
                 </Card>
-                <Card id="scrollable" style={{gridColumnStart: 3, gridColumnEnd: 7, backgroundColor: '#B0BEC5', color: 'black'}}>
+                <Card style={{gridColumnStart: 3, gridColumnEnd: 7, backgroundColor: '#B0BEC5', color: 'black'}}>
                     <h2>Some of my skills :)</h2>
-                    <img
-                        src="https://skillicons.dev/icons?i=java,js,ts,linux,html,css,react,vue,nextjs,webflow,vite,electron,express,graphql,nestjs,sqlite,mysql,mongo,redis,bots,nginx,cloudflare,grafana,git,nodejs,maven,gradle,gcp,azure,heroku,vscode,idea,postman&perline=11"/>
+                    <img alt="skills" src="https://skillicons.dev/icons?i=java,js,ts,linux,html,css,react,vue,nextjs,webflow,vite,electron,express,graphql,nestjs,sqlite,mysql,mongo,redis,bots,nginx,cloudflare,grafana,git,nodejs,maven,gradle,gcp,azure,heroku,vscode,idea,postman&perline=11"/>
                 </Card>
                 <Card style={{gridColumnStart: 1, gridColumnEnd: 4, backgroundColor: '#6A1B9A'}}>
                     <h2>Content creators I worked for</h2>
