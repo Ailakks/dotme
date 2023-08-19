@@ -7,7 +7,7 @@ export default function Footer() {
         <div className={style.container}>
             <div>
                 <i className="fa-solid fa-heart" />
-                <a href="https://ailakks.com">Made by Ailakks</a>
+                <a href="https://ailakks.dev">Made by Ailakks</a>
             </div>
             <div>
                 <i className="fa-brands fa-git-alt" />
