@@ -8,20 +8,20 @@ import SideGrid from "../../components/layout/side-grid/side-grid";
 import Avatar from "../../components/ui/avatar/avatar";
 
 import moment from 'moment';
-import {useEffect, useState} from "react";
+import {createContext, useContext, useEffect, useState} from "react";
 
 import InlineGrid from "../../components/ui/inline-grid/inline-grid";
 import ExpandableList from "../../components/ui/expandable-list/expandable-list";
 import Activity from "../../components/ui/discord/activity/activity";
 import Spotify from "../../components/ui/discord/spotify/spotify";
-
-import ContentCreators from "../../assets/list/content-creators.json";
-import Projects from "../../assets/list/projects.json";
-import Works from "../../assets/list/works.json";
-import MinecraftSoftware from "../../assets/list/minecraft-software.json";
-import Setup from "../../assets/list/setup.json";
-import Recommend from "../../assets/list/recommend.json";
 import Footer from "../../components/ui/footer/footer";
+
+import contentCreators from "../../assets/list/content-creators.json";
+import projects from "../../assets/list/projects.json";
+import works from "../../assets/list/works.json";
+import minecraftSoftware from "../../assets/list/minecraft-software.json";
+import setup from "../../assets/list/setup.json";
+import recommend from "../../assets/list/recommend.json";
 
 export default function Home() {
     const [date, setDate] = useState(moment({month: 2, date: 25}));
@@ -63,11 +63,10 @@ export default function Home() {
                 </Card>
                 <Card style={{gridColumnStart: 1, gridColumnEnd: 4, backgroundColor: '#6A1B9A'}}>
                     <h2>Content creators I worked for</h2>
-                    <InlineGrid list={ContentCreators}/>
                 </Card>
                 <Card style={{gridColumnStart: 4, gridColumnEnd: 7, backgroundColor: '#1E88E5'}}>
                     <h2>Projects I've been part of</h2>
-                    <InlineGrid list={Projects}/>
+                    <ProjectList />
                 </Card>
                 <Card link="https://open.spotify.com/playlist/3LpykziPdqQltgWnwbAfq4?si=7e891b3008ba45cc"
                       style={{gridColumnStart: 1, gridColumnEnd: 3, backgroundColor: '#1DB954'}}>
@@ -89,7 +88,7 @@ export default function Home() {
                 </Card>
                 <Card style={{gridColumnStart: 1, gridColumnEnd: 3, backgroundColor: '#1E88E5'}}>
                     <h2>Projects I did</h2>
-                    <InlineGrid list={Works}/>
+                    <InlineGrid list={works}/>
                 </Card>
                 <Card link="https://github.com/Ailakks/dotme"
                       style={{gridColumnStart: 3, gridColumnEnd: 5, backgroundColor: '#2abf84'}}>
@@ -103,11 +102,11 @@ export default function Home() {
                 </Card>
                 <Card style={{gridColumnStart: 1, gridColumnEnd: 4, backgroundColor: '#f54550'}}>
                     <h2>My setup</h2>
-                    <ExpandableList list={Setup}/>
+                    <ExpandableList list={setup}/>
                 </Card>
                 <Card style={{gridColumnStart: 4, gridColumnEnd: 7, backgroundColor: '#DD2C00'}}>
                     <h2>Minecraft software I work with</h2>
-                    <ExpandableList grid list={MinecraftSoftware}/>
+                    <ExpandableList grid list={minecraftSoftware}/>
                 </Card>
                 <Card link="https://discord.gg/btbnqmtnWz"
                       style={{gridColumnStart: 1, gridColumnEnd: 3, backgroundColor: '#5865F2'}}>
@@ -128,7 +127,7 @@ export default function Home() {
                 </Card>
                 <Card style={{gridColumnStart: 1, gridColumnEnd: 5, backgroundColor: '#413177'}}>
                     <h2>Content creators I recommend</h2>
-                    <InlineGrid list={Recommend}/>
+                    <InlineGrid list={recommend}/>
                 </Card>
                 <Card
                     style={{gridColumnStart: 5, gridColumnEnd: 7, backgroundColor: '#8422ab', justifyItems: 'center'}}>
@@ -138,5 +137,46 @@ export default function Home() {
             </div>
             <Footer/>
         </Container>
+    )
+}
+
+export const ListContext = createContext(null);
+
+function ProjectList() {
+    return (
+        projects.map((value, key) =>
+            <div key={key}>
+                <ListContext.Provider value={{ value }}>
+                    <ProjectCategoryList />
+                </ListContext.Provider>
+            </div>
+        )
+    )
+}
+
+function ProjectCategoryList() {
+    const { value: { list } } = useContext(ListContext);
+
+    return (
+        list.map((value, key) =>
+            <div key={key}>
+                <ListContext.Provider value={{ value }}>
+                    <Project />
+                </ListContext.Provider>
+            </div>
+        )
+    )
+}
+
+function Project() {
+    const { value } = useContext(ListContext);
+
+    return (
+        <div>
+            <p>{value.target.displayName}</p>
+            {value.by && <p>by {value.by.displayName}</p>}
+            {value.for && <p>for {value.by.displayName}</p>}
+            {value.with && <p>with {value.with.displayName}</p>}
+        </div>
     )
 }
