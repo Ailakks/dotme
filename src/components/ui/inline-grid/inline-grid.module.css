@@ -2,11 +2,11 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, 24px);
     overflow: auto visible;
+    transition: transform .4s;
 }
 
 .image:hover {
     transform: scale(1.04);
-    transition: transform .4s;
 }
 
 .image {
