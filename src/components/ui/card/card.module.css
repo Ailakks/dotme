@@ -9,11 +9,12 @@
     border-radius: var(--theme-values-border_radius-main);
 
     overflow: hidden;
+    
+    transition: all 0.3s cubic-bezier(.14,1,.94,.85);
 }
 
 .container:hover {
     transform: scale(1.03);
-    transition: all 0.3s cubic-bezier(.14,1,.94,.85);
 }
 
 #spaced {
