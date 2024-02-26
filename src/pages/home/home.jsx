@@ -39,13 +39,13 @@ export default function Home() {
                     <SideGrid
                         element={<Avatar style={{height: 120}} image={require('../../assets/images/avatar.png')}/>}>
                         <h2>Hey, my name is Ailakks! :D</h2>
-                        <h3>I'm a passionate 17-year-old developer who loves building cool stuff with Java and
+                        <h3>I'm a passionate 18-year-old developer who loves building cool stuff with Java and
                             JavaScript.</h3>
                     </SideGrid>
                 </Card>
                 <Card style={{gridColumnStart: 5, gridColumnEnd: 7, backgroundColor: '#F44336', textAlign: 'center'}}>
-                    <h1>{date.diff(moment(), 'days')} days</h1>
-                    <h3>until my birthday — February 25.</h3>
+                    <h1>February 25</h1>
+                    <h3>My birthday.</h3>
                 </Card>
                 <Card link="https://twitter.com/Ailakks"
                       style={{gridColumnStart: 1, gridColumnEnd: 2, backgroundColor: '#1DA1F2'}} id="spaced">
