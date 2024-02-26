@@ -44,7 +44,7 @@ export default function Home() {
                     </SideGrid>
                 </Card>
                 <Card style={{gridColumnStart: 5, gridColumnEnd: 7, backgroundColor: '#F44336', textAlign: 'center'}}>
-                    <h1>February 25</h1>
+                    <h2>February 25</h2>
                     <h3>My birthday.</h3>
                 </Card>
                 <Card link="https://twitter.com/Ailakks"
